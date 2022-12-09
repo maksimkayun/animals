@@ -1,10 +1,4 @@
-class Horse(food: String, location: String, whinny: String) : Animal(food, location) {
-    private var whinny: String? = null
-        private set
-
-    init {
-        this.whinny = whinny
-    }
+class Horse(food: String, location: String, private val whinny: String) : Animal(food, location) {
 
     override fun makeNoise() {
         igogo()

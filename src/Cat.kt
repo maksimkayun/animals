@@ -1,10 +1,4 @@
-class Cat(food: String, location: String, meow: String) : Animal(food, location) {
-    var meow: String? = null
-        private set
-
-    init {
-        this.meow = meow
-    }
+class Cat(food: String, location: String, private val meow: String) : Animal(food, location) {
 
     override fun makeNoise() {
         meowOrMrrr()

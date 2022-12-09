@@ -1,14 +1,4 @@
-abstract class Animal constructor(food: String, location: String) {
-    var food: String? = null
-        protected set
-    var location: String? = null
-        protected set
-
-    init {
-        this.food = food
-        this.location = location
-    }
-
+abstract class Animal constructor(val food: String, val location: String) {
     abstract fun makeNoise()
     abstract fun eat()
     open fun sleep() {

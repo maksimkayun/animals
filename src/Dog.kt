@@ -1,10 +1,4 @@
-class Dog(food: String, location: String, wof: String) : Animal(food, location) {
-    var wof: String? = null
-        private set
-
-    init {
-        this.wof = wof
-    }
+class Dog(food: String, location: String, private val wof: String) : Animal(food, location) {
 
     override fun eat() {
         println("Собака сейчас ест ${this.food}, лапу даст потом. Её миска в локации:${location}")
